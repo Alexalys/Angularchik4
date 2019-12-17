@@ -6,10 +6,14 @@ import {BookService,Book} from "./book.service";
 @Component({
     selector: 'add-book',
     template: `<div>
-        <h3>Параметры объекта</h3>
+        <h3>Введите данные о книге</h3>
+        <p>ID</p>
         <input type="number" [(ngModel)]="id"  class="form-control" placeholder="ID"/><br />
+        <p>Название</p>
         <input [(ngModel)]="name"    placeholder="Name" /><br />
+        <p>Автор</p>
         <input [(ngModel)]="author"   placeholder="Author" /><br />
+        <p>Год издания</p>
         <input type="number" [(ngModel)]="year"  class="form-control" placeholder="Year"/><br />
         <button (click)="createBook()" class="btn">Create</button>
     </div>`
